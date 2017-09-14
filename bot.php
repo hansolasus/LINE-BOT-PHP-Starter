@@ -19,6 +19,11 @@ if (!is_null($events['events'])) {
 			}else if($text == 'แจงสวย'){
 				$text = 'นั่นไม่จริงเลย!!!';
 			}
+			
+			$pos = strrpos($mystring, "สุดา");
+			if ($pos === true) { // note: three equal signs
+				$text = 'สุดาแก่มาก!!!!';
+			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
