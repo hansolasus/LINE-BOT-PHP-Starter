@@ -26,6 +26,8 @@ if (!is_null($events['events'])) {
 				$text = 'ตุ้ยเมื่อไรจะผอม!!!!';
 			}else if(strpos($text, 'มด') !== false){
 				$text = 'มดดำเป็นตอตะโก!!!!';
+			}else if(strpos($text, 'ต้อม') !== false){
+				$text = 'พี่ต้อมผู้ใหญ่ใจดี ชอบเลี้ยงน้องๆ';
 			}else{
 				$text = '';
 			}
