@@ -16,6 +16,8 @@ if (!is_null($events['events'])) {
 			
 			if($text == 'แบงค์หล่อมาก'){
 				$text = 'ถูกต้องที่สุด';
+			}else if($text == 'แจงสวย'){
+				$text = 'นั่นไม่จริงเลย!!!';
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
