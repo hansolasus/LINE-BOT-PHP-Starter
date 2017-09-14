@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 				$text = 'นั่นไม่จริงเลย!!!';
 			}
 			
-			$pos = strrpos($mystring, "สุดา");
+			$pos = strrpos($text, "สุดา");
 			if ($pos === true) { // note: three equal signs
 				$text = 'สุดาแก่มาก!!!!';
 			}
