@@ -14,12 +14,6 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			
-			if($text == 'แบงค์หล่อมาก'){
-				$text = 'ถูกต้องที่สุด';
-			}else if($text == 'แจงสวย'){
-				$text = 'นั่นไม่จริงเลย!!!';
-			}
-			
 			if (strpos($text, 'สุดา') !== false) { // note: three equal signs
 				$text = 'สุดาแก่มาก!!!!';
 			}else if(strpos($text, 'แบงค์') !== false){
