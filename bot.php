@@ -13,7 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-			
+			$msgCount = strlen($text);
 			if (strpos($text, 'สุดา') !== false) { // note: three equal signs
 				$text = 'สุดาแก่มาก!!!!';
 			}else if(strpos($text, 'แบงค์') !== false){
@@ -25,7 +25,11 @@ if (!is_null($events['events'])) {
 			}else if(strpos($text, 'ตุ้ย') !== false){
 				$text = 'ครางชื่อตุ้ยหน่อย!!!!';
 			}else if(strpos($text, 'มด') !== false){
-				$text = 'มดดำเป็นตอตะโก!!!!';
+				if($msgCount % 2 == 0){
+					$text = 'มดดำเป็นตอตะโก!!!!';
+				}else{
+					$text = 'มดดำตับเป็ด!!!!';
+				}
 			}else if(strpos($text, 'ต้อม') !== false){
 				$text = 'พี่ต้อมผู้ใหญ่ใจดี ชอบเลี้ยงน้องๆ';
 			}else{
