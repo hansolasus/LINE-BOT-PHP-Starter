@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			}else if(strpos($text, 'แจง') !== false){
 				$text = 'แจงไม่สวยเลย!!!!';
 			}else if(strpos($text, 'ตุ้ย') !== false){
-				$text = 'ตุ้ยเมื่อไรจะผอม!!!!';
+				$text = 'ครางชื่อตุ้ยหน่อย!!!!';
 			}else if(strpos($text, 'มด') !== false){
 				$text = 'มดดำเป็นตอตะโก!!!!';
 			}else if(strpos($text, 'ต้อม') !== false){
