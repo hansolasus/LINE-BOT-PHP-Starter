@@ -22,6 +22,14 @@ if (!is_null($events['events'])) {
 			
 			if (strpos($text, 'สุดา') !== false) { // note: three equal signs
 				$text = 'สุดาแก่มาก!!!!';
+			}else if(strpos($text, 'แบงค์') !== false){
+				$text = 'แบงค์หน้าตาดีมาก!!!!';
+			}else if(strpos($text, 'เก่ง') !== false){
+				$text = 'เก่งขี้เหล้าจัง!!!!';
+			}else if(strpos($text, 'แจง') !== false){
+				$text = 'แจงไม่สวยเลย!!!!';
+			}else if(strpos($text, 'ตุ้ย') !== false){
+				$text = 'ตุ้ยเมื่อไรจะผอม!!!!';
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
