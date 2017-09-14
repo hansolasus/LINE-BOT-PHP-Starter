@@ -1,3 +1,3 @@
 <?php
-	echo "I an a bot!!";
+	echo "I am a bot!!";
 ?>
