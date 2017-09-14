@@ -1,4 +1,7 @@
 <?php
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 	$client = new SoapClient("http://www.scadachaopraya.com/CPYProvider.asmx?wsdl",
 			array(
 			  "trace"      => 1,		// enable trace to view what is happening
